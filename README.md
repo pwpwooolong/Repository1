@@ -8,6 +8,7 @@ wow ho 2
 4567
 
 
-![Puppy with="600" heigh="400"](./image/puppy01.jpg,) ![Puppy](./image/puppy02.jpg,)with="600" heigh="400"
+![Puppy](./image/puppy01.jpg,)
+![Puppy](./image/puppy02.jpg,)
 
 ![Another cat](https://i.imgur.com/5fnqqQ7.jpg)
