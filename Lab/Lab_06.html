@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_06</title>
+</head>
+<style>
+    body {
+        background-image: url(image/pocahontas.jpeg);
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-size:cover;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        font-size: 3rem;
+    }
+    header {
+        background-color: rgb(22, 128, 155);
+        padding:30px;
+        text-align:center;
+        font-size: 35px;
+        }
+    .content{
+        flex-grow: 1;
+        display:flex;
+        flex-direction:row
+        }
+    .side{
+        display:grid;
+        grid-template-rows:repeat(2,200px)
+        }
+    table{    
+        margin-left:auto; 
+        margin-right:auto;
+    }  
+    th,tr,td{
+        border-color: black;
+        border-style: dotted;
+        font-family: Akaya Telivigala;
+        font-size: 40px;
+        border-radius: 5px;
+    }
+    td{
+        background-image: url(image/backgroundimage.jpg);
+    }
+    .lunch{
+        background-color:orange;color:white;
+        background-image:unset;
+    }
+    td.time{
+        background-color:rgb(127, 253, 255);
+        background-image:unset;
+    }
+    #title{
+    color: #fffef9;
+    text-shadow: rgb(254, 255, 197) 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px;
+    }
+    td:hover {
+        background-image:unset;
+        background-color: yellow;
+    }
+
+
+
+</style>
+
+<body>
+    <header id="title" style="font-family: 'ZCOOL QingKe HuangYou', cursive;">課表課表課表</header>
+    <div class="content">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&family=Akaya+Telivigala&display=swap" rel="stylesheet">
+        <table width="400" style="text-align:center; font-size: 40px">
+            <caption></caption>
+            <thead style="color: tomato; background-color: #99f9d3;">
+            <tr>
+                <th>   </th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td class="time">9:10</td>
+                <td>Grammar</td>
+                <td>Writing</td>
+                <td>Reading</td>
+                <td>Math</td>
+                <td>Science</td>
+                </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td class="time">10:10</td>
+                <td>Science</td>
+                <td>Grammar</td>
+                <td>Writing</td>
+                <td>Reading</td>
+                <td>Math</td>
+            </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td class="time">11:10</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Grammar</td>
+                <td>Writing</td>
+                <td>Reading</td>
+            </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td class="time">12:10</td>
+                <td class="lunch" colspan="6">Lunch</td>
+            </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td class="time">13:10</td>
+                <td>Reading</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Grammar</td>
+                <td>Writing</td>
+            </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td class="time">14:10</td>
+                <td>Writing</td>
+                <td>Reading</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Grammar</td>
+            </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td class="time">15:10</td>
+                <td>P.E.</td>
+                <td>P.E</td>
+                <td>P.E</td>
+                <td>P.E</td>
+                <td>P.E</td>
+            </tr>
+            
+            </tbody>
+        </table>
+        <div class="side">
+            <p>公告事項</p>
+            <p>2021.03.19  林佳龍與觀光學術界交流　分享觀光立國理念</p>
+        </div>
+        <div class="side">
+            <p>行事曆</p>
+            <p><img src="./image/calendar.png" height="200" alt="calendar"></p>
+
+        </div>
+    </div>
+    </body>
+
+    </html>
