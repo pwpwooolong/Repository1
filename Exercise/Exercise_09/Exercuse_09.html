@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 09</title>
+    <style type="text/css">
+    table{
+        border-collapse: collapse;
+        border-right:solid black;
+        border-left: solid black;
+
+    }
+    th{
+        border:3px solid black;
+        border-collapse: collapse;
+    }
+    .c{
+        border:2px solid lightgray;
+    }
+    .yellowline{
+        background-color: yellow;
+        border-top-style: solid;
+    }
+    .bottom{
+        border-bottom-style:hidden;
+        border-right-style:hidden;
+        border-left-style:hidden;
+    }
+    .bottom_right{
+        border-bottom-style:dashed;
+        border-right-style:hidden;
+    }
+    .a{
+        border-bottom-style:solid;
+    }
+    .b{
+        border-left-style: solid;
+    }
+    </style>
+</head>
+<body>
+    <table width="100%" style= "text-align:center">
+        <caption style="background-color:powderblue; font-weight: bold;">資產負債表</caption>
+        <thead>
+          <tr class="yellowline">
+            <th colspan="3">資產</th>
+            <th colspan="3">負債及股東權益</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="a" style="background-color:yellowgreen;" rowspan="4" colspan="1">流動資產</td>
+            <td class="c">現金</td>
+            <td class="c">399,526</td>
+            <td class="a b" style="background-color:pink;" rowspan="3">流動負債</td>
+            <td class="c">短期借款</td>
+            <td class="c">1,634,870</td>
+          </tr>
+          <tr>
+            <td class="c">存貨</td>
+            <td class="c">819,954</td>
+            <td class="c"></td>
+            <td class="c">1,912,740</td>
+          </tr>
+          <tr>
+            <td class="c">應收帳款</td>
+            <td class="c">945,494</td>
+            <td class="a">應付帳款</td>
+            <td class="c" style="border-bottom:solid black;">277,870</td>
+          </tr>
+          <tr>
+            <td class="a"></td>
+            <td class="c" style="border-bottom:solid black;">2,164,974</td>
+            <td class="a b" style="background-color:magenta">非流動負債</td>
+            <td class="a">長期借款</td>
+            <td class="a">69,600</td>
+          </tr>
+          <tr>
+            <td style="background-color:green;" rowspan="4">非流動資產</td>
+            <td class="c" rowspan="4">固定資產</td>
+            <td class="c"></td>
+            <td class="a b" style="background-color:pink;">負債合計</td>
+            <td class="a"></td>
+            <td class="c" style="border-bottom:solid black;">1,982,340</td>
+          </tr>
+          <tr>
+            <td class="c"></td>
+            <td class="b" style="background-color:limegreen;" rowspan="2">股東權益</td>
+            <td class="c">股本</td>
+            <td class="c">1,102,186</td>
+          </tr>
+          <tr>
+            <td class="c">1,361,096</td>
+            <td class="c">保留盈餘</td>
+            <td class="c">441,544</td>
+          </tr>
+          <tr>
+            <td class="c"></td>
+            <td class="b" style="background-color:limegreen;">股東權益合計</td>
+            <td class="c"></td>
+            <td class="c">1,543,730</td>
+          </tr>
+          <tr class="yellowline" style="border-top-color: black;">
+              <td class=bottom colspan="2" style="text-align: left;">資產合計</td>
+              <td class="bottom_right" style="border:dashed">3,526,070</td>
+              <td class=bottom colspan="2" style="text-align: left;">負債及股東權益</td>
+              <td class="bottom_right">3,526,070</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
