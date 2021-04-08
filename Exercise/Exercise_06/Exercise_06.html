@@ -5,11 +5,167 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+    body {
+        background: url(image/bg4.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        font-size: 3rem;
+    }
+    header {
+        background:url(image/bg3.jpg) no-repeat 20%;
+        padding: 0.1em;
+        text-align:center;
+        font-size: 35px;
+        font-family: "Inter"
+        }
+    .content{
+        flex-grow: 1;
+        display:flex;
+        flex-direction:row
+        }
+    .side{
+        background-image: url(image/bg2.jpg);
+        display:flex;
+        flex-flow: column wrap; 
+        border-color:black; 
+        width:400px;
+        height:100vh;
+        }
+    table{    
+        margin-left:auto; 
+        margin-right:auto;
+    }  
+    th,tr,td{
+        border-color: black;
+        border-style: dotted;
+        font-family: Akaya Telivigala;
+        font-size: 30px;
+        border-radius: 5px;
+    }
+    td{
+        background-color:aquamarine;
+    }
+    .lab{
+        background-color:tomato;
+        color:wheat;
+        background-image:unset;
+    }
+    .lab:hover{
+        background-color: tomato;
+    }
+    *,
+    *:after,
+    *:before {
+	    box-sizing: border-box;
+    }
+    .text-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    h1 {
+        font-size: 4vw;
+        font-weight: 900;
+        background-color:rgb(12, 102, 109);
+        color: #fff;
+        display:block;
+        padding: .1em;
+    }
+
+    h1:nth-child(2) {
+        position: absolute;
+        background-color: #fff;
+        color:rgb(12, 102, 109);
+        clip-path: inset(-1% -1% 50% -1%); /* Added the negative values to prevent icky "bleed" in Chrome*/
+    }
+    td:hover {
+        background-image:unset;
+        background-color: yellow;
+    }
+    .verticalLine {
+        border-left: thick solid tomato;
+    }
 </style>
 <body>
-
-
-
+    <header class="title" style="font-family: 'ZCOOL QingKe HuangYou', cursive;">
+        <div class="text-box">
+            <h1>作品們</h1>
+            <h1>作品們</h1>
+        </div>
+    </header>
+    <div class="content">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&family=Akaya+Telivigala&display=swap" rel="stylesheet">
+        <table width="400" style="text-align:center; font-size: 40px">
+            <caption></caption>
+            <thead style="color: tomato; background-color:wheat;">
+            <tr>
+                <th>Exercise</th>
+                <th>連結</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td>Exercise_01</td>
+                <td><a href="https://pwpwooolong.github.io/Repository1/Exercise/Exercise_01/Exercise_01.html"
+                    title="Exercise_01"
+                    target="_blank">link01</a></td>
+                </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td>Exercise_02</td>
+                <td><a href="https://pwpwooolong.github.io/Repository1/Exercise/Exercise_02/Exercise_02.html"
+                    title="Exercise_02"
+                    target="_blank">link02</a></td>
+            </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td>Exercise_03</td>
+                <td><a href="https://pwpwooolong.github.io/Repository1/Exercise/Exercise_03/index.html"
+                    title="Exercise_03"
+                    target="_blank">link03</a></td>
+            </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td class="lab">Labs</td>
+                <td class="lab">連結</td>
+            </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td>01-課表</td>
+                <td><a href="https://pwpwooolong.github.io/Repository1/Lab/Lab_01.html"
+                    title="Lab_01"
+                    target="_blank">Lab01</a></td>
+            </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td>02-美化課表</td>
+                <td><a href="https://pwpwooolong.github.io/Repository1/Lab/Lab_02.html"
+                    title="Lab_02"
+                    target="_blank">Lab02</a></td>
+            </tr>
+            <tr style="font-family: 'Akaya Telivigala', cursive;">
+                <td>04-用style標籤</td>
+                <td><a href="https://pwpwooolong.github.io/Repository1/Lab/Lab_04.html"
+                    title="Lab_04"
+                    target="_blank">Lab04</a></td>
+            </tr>
+            
+            </tbody>
+        </table>
+        <div class="verticalLine"></div>
+        <div class="side">
+            <div style="border-width: 400px;">
+            <p style="font-size:40px; font-family: 'ZCOOL QingKe HuangYou', cursive;">ABOUT ME</p>
+            <p style="font-size:25px; font-family: 'ZCOOL QingKe HuangYou', cursive;">如此這般如此這般</p>
+            </div>
+            <div style="border-width: 400px;">
+            <p style="font-size:40px; font-family: 'ZCOOL QingKe HuangYou', cursive;">此處應有圖</p>
+            <p><img src="./image/wr map.jpg" height="200" alt="calendar"></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
